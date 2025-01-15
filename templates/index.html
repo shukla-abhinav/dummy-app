@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10by10Baddie - Are You One?</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h1>✨ 10by10Baddie ✨</h1>
+            <p class="tagline">Find out if you're a certified baddie! 💅</p>
+        </div>
+        <div class="form-card">
+            <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="off">
+                <div class="form-group">
+                    <label for="name">✏️ What's your name?</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your baddie name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">🎂 How old are you?</label>
+                    <input type="number" id="age" name="age" placeholder="Your age" required min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="hair">💇‍♀️ What's your hair color?</label>
+                    <select id="hair" name="hair" required>
+                        <option value="">Choose your hair color</option>
+                        <option value="Red">Red</option>
+                        <option value="Blonde">Blonde</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hobby">🎯 What's your favorite hobby?</label>
+                    <input type="text" id="hobby" name="hobby" placeholder="E.g., Shopping, Dancing" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="singer">🎤 Who's your favorite singer?</label>
+                    <select id="singer" name="singer" required>
+                        <option value="">Choose your favorite singer</option>
+                        <option value="Taylor Swift">Taylor Swift</option>
+                        <option value="BTS">BTS</option>
+                        <option value="Bruno Mars">Bruno Mars</option>
+                        <option value="Ariana Grande">Ariana Grande</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="body_count">👀 What's your body count?</label>
+                    <input type="number" id="body_count" name="body_count" placeholder="Enter your body count" required min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">📸 Upload your baddie photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Check Your Baddie Status ✨</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

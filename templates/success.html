@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations - 10by10Baddie</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container success-page">
+        <h1>✨ Congratulations! ✨</h1>
+        <p class="tagline">You're officially a certified 10by10Baddie! 💅</p>
+        <div class="result-card">
+            <div class="user-info">
+                <div class="user-info-item">
+                    <span class="user-info-label">👤 Name:</span>
+                    <span class="user-info-value">{{ name }}</span>
+                </div>
+                <div class="user-info-item">
+                    <span class="user-info-label">🎂 Age:</span>
+                    <span class="user-info-value">{{ age }}</span>
+                </div>
+                <div class="user-info-item">
+                    <span class="user-info-label">🎯 Hobby:</span>
+                    <span class="user-info-value">{{ hobby }}</span>
+                </div>
+                <div class="user-info-item">
+                    <span class="user-info-label">💇‍♀️ Hair:</span>
+                    <span class="user-info-value">{{ hair }}</span>
+                </div>
+                <div class="user-info-item">
+                    <span class="user-info-label">🎤 Singer:</span>
+                    <span class="user-info-value">{{ singer }}</span>
+                </div>
+            </div>
+            <div class="photo-container">
+                <img src="{{ photo_path }}" alt="Your Baddie Photo" class="uploaded-photo">
+            </div>
+        </div>
+        <a href="/" class="back-btn">Start Over ↺</a>
+    </div>
+</body>
+</html>
